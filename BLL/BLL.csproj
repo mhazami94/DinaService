@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj" />
+    <ProjectReference Include="..\DTO\DTO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Azami">
+      <HintPath>..\TParty\Azami.dll</HintPath>
+    </Reference>
+    <Reference Include="Azami.Framework">
+      <HintPath>..\TParty\Azami.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Azami.Utility">
+      <HintPath>..\TParty\Azami.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

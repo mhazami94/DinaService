@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BuildBundlerMinifier" Version="3.2.449" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="WebMarkupMin.AspNetCore3" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj" />
+    <ProjectReference Include="..\DTO\DTO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Azami">
+      <HintPath>..\TParty\Azami.dll</HintPath>
+    </Reference>
+    <Reference Include="Azami.Framework">
+      <HintPath>..\TParty\Azami.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Azami.Utility">
+      <HintPath>..\TParty\Azami.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

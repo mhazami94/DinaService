@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DTO\DTO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Azami">
+      <HintPath>..\TParty\Azami.dll</HintPath>
+    </Reference>
+    <Reference Include="Azami.Framework">
+      <HintPath>..\TParty\Azami.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Azami.Utility">
+      <HintPath>..\TParty\Azami.Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

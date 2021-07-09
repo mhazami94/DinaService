@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZQFgKmoZeAShA3I6ytvQNety1GkA8Rldr4UHkm1EMLF89rdoXMEj+7v6ZI21WEZTl4orHg1k5LMhFRFlt9Hsxg==",
+  "success": true,
+  "projectFilePath": "C:\\WorkSpace\\DinaService\\BLL\\BLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mohammad.azamiadarab\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.7\\microsoft.aspnetcore.http.features.5.0.7.nupkg.sha512",
+    "C:\\Users\\mohammad.azamiadarab\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\mohammad.azamiadarab\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
+    "C:\\Users\\mohammad.azamiadarab\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

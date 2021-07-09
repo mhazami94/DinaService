@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+<head>
+    <meta name="google-site-verification" content="0-rborNFGNrP4h9K6A23teq0RXMZ6kFHyHKGx5xVaqI" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="alternate" href="https://dinaservice.com" hreflang="fa-IR" />
+    <link href="~/Content/Images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <title>@ViewBag.Title | دینا سرویس</title>
+    <meta name="description" content="@ViewBag.Des" />
+    <meta name="keywords" content="@ViewBag.Key" />
+    <script src="/App_theme/DinaTheme/js/jquery-3.1.1.min.js"></script>
+    <link href="/App_theme/DinaTheme/css/all.min.css" rel="stylesheet" />
+    <link href="~/App_theme/DinaTheme/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/App_theme/DinaTheme/slider/assets/web/assets/mobirise-icons/mobirise-icons.min.css" rel="stylesheet" />
+    <link href="/App_theme/DinaTheme/slider/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/App_theme/DinaTheme/slider/assets/mobirise/css/mbr-additional.min.css" rel="stylesheet" />
+    <link href="/App_theme/DinaTheme/css/nav-style.min.css" rel="stylesheet" />
+    <link href="/App_theme/DinaTheme/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/App_theme/DinaTheme/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="/App_theme/DinaTheme/css/aos.min.css" rel="stylesheet" />
+    <link href="/App_theme/DinaTheme/css/style.min.css" rel="stylesheet" />
+</head>
+<body onload="myFunction()">
+
+    <div id="myDiv" class="animate-bottom main-div">
+        <div class="container-fluid container-nav">
+            <div class="row header-nav-panel ordinal-box">
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-4 logo-company item-first">
+                    <a href="/">
+                        <img src="/Content/Images/dinaservice.png" alt="دینا سرویس" />
+                    </a>
+                </div>
+
+
+                <div class="col-lg-8 col-md-12 col-xs-12 col-sm-12 navbar-panel  item-third">
+                    <div class="r-collapse">
+                        <ul class="icon-nav">
+                            <li class="bar1"></li>
+                            <li class="bar2"></li>
+                            <li class="bar3"></li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>
+                            <nav class="r-nav navigation-menu sidenav close-nav ">
+                                <div id="accordian" class="content-navigation-menu">
+                                    <ul class="list-nav">
+
+                                        <li>
+                                            <a class="dropdown-btn">
+                                                <span>برندها ی لوازم خانگی</span>
+
+                                                <ul class="btn-menu">
+                                                    <li class="bar1"></li>
+                                                    <li class="bar3"></li>
+                                                </ul>
+
+                                            </a>
+                                            @*<ul class="mega-menu">
+
+                                                    <li>
+                                                        <div class="row">
+                                                            @Html.Action("GenerateMenu", "Home", null)
+
+                                                        </div>
+                                                    </li>
+
+                                                </ul>*@
+                                        </li>
+
+
+
+                                        <li>
+                                            <a href="/Articles">
+                                                <span>مقالات</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="@Url.Action("AboutUs","Home",new { area="",id=1,slug="درباره-دیناسرویس"})" class="dropdown-btn">
+                                                <span> درباره ی ما</span>
+
+                                            </a>
+
+                                        </li>
+
+                                        <li>
+                                            <a href="@Url.Action("ContactUs","Home",new { area="",id=1,slug="تماس-با-دیناسرویس"})" class="dropdown-btn">
+                                                <span> تماس با ما</span>
+
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </nav>
+                        </li>
+                    </ul>
+                </div>
+               @await Component.InvokeAsync("SearchComponent")
+            </div>
+
+        </div>
+
+
+
+        <main>
+
+
+            @RenderBody()
+
+
+            <hr />
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                            <div class="row service-footer">
+
+
+                                <div class="col-md-6 col-lg-6 col-xs-6 col-sm-3">
+
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xs-6 col-sm-3">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <h3>
+                                                    شعبات دینا سرویس
+                                                </h3>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <strong>آدرس دفتر شرق دینا سرویس:</strong>
+                                                ایـران، تهـران، خیـابان پیروزی، نبش چهارراه فرزانه، پلاک 43
+                                                <br />
+                                                <strong>تلفن:</strong>
+                                                02177478564 | 02177151790 - 3
+
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <strong>آدرس دفتر غرب دینا سرویس:</strong>
+                                                ایـران، تهـران، خیـابان اشرفی اصفهانی، ساختمان هامون، واحد 48
+                                                <br />
+                                                <strong>تلفن:</strong>
+                                                02144239870 - 1
+
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <strong>آدرس دفتر شمال دینا سرویس:</strong>
+                                                ایـران، تهـران، اقدسیه، خیـابان سپند، کوچه کامران، پاساژ صاحب قرانیه، واحد 32
+                                                <br />
+                                                <strong>تلفن:</strong>
+                                                02126100783 | 02126120917
+
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                            <div class="left-box-footer">
+                                <ul>
+                                    <li> <img src="/Content/Images/dinaservice.png" alt="دینا سرویس" /></li>
+                                    <li>
+                                        <span>
+                                            <strong>آدرس دفتر مرکزی دینا سرویس:</strong>
+                                            ایـران، تهـران، خیـابان پیروزی، نبش چهارراه فرزانه، پلاک 43
+                                            <br />
+                                            <strong>تلفن:</strong>
+                                            02177478564 | 02177151790-3
+
+                                        </span>
+                                    </li>
+                                    <li>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </footer>
+        </main>
+    </div>
+   
+
+
+
+
+    <script src="/App_theme/DinaTheme/js/modernizr-2.8.3.min.js"></script>
+
+    <script src="/App_theme/DinaTheme/js/navbar.min.js"></script>
+    <script src="/App_theme/DinaTheme/slider/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/App_theme/DinaTheme/slider/assets/theme/js/script.min.js"></script>
+    <script src="/App_theme/DinaTheme/slider/assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.min.js"></script>
+    <script src="/App_theme/DinaTheme/js/owl.carousel.min.js"></script>
+    <script src="/App_theme/DinaTheme/js/aos.min.js"></script>
+    <script src="/js/site.min.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

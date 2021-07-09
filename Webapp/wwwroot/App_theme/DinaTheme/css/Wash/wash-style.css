@@ -1,0 +1,192 @@
+.section-header h2, .study-item-body h2, .contact-right-box-head h3, .our-services-item-text label, .item-contact-form, .item-other-texts-content a h5, .item-other-texts-content a h5:hover {
+    color: #013870;
+}
+
+    .item-contact-form input[type="button"], .item-contact-form input[type="submit"] {
+        background: #15caa5
+    }
+
+        .item-contact-form input[type="button"]:hover {
+            background: #013870;
+        }
+
+        .item-contact-form input[type="submit"]:hover {
+            background: #013870;
+        }
+
+        .container-nav, .list-nav > li > ul > li, #accordian li.active > ul.mega-menu {
+            background-color: #ffffff
+        }
+
+.dropdown-container {
+    background: #013870
+}
+
+.header-info li {
+    color: #013870;
+}
+
+.support-box > ul > li svg {
+    color: #013870;
+}
+
+#accordian ul.mega-menu ul {
+    background: #ffffff;
+}
+
+.list-nav > li a span {
+    color: #013870;
+    opacity: 1
+}
+
+.btn-menu .bar1, .btn-menu .bar2, .btn-menu .bar3 {
+    background-color: #013870
+}
+
+
+.content-navigation-menu {
+    border-top: 1px solid #013870;
+}
+
+    footer .service-footer a:after, .content-navigation-menu .list-nav > li:after, a.detail-box:after {
+        border-top: 3px solid #013870;
+        opacity: 1;
+    }
+
+.support-box > ul > li.header-info {
+    border-left: 1px solid #013870;
+}
+
+a.detail-box, a.detail-box:hover, .paragraph-item > li label, .service-item ul li span {
+    color: #15caa5;
+}
+
+
+.list-nav > li:hover > a span, .list-nav > li:hover > a svg {
+    color: #013870;
+}
+
+body {
+    color: #717171;
+}
+
+#accordian li.active > ul.mega-menu:after {
+    background: #013870;
+}
+
+.mini-header span, .section-header-content span, .mini-footer span {
+    color: #013870
+}
+
+.button-c {
+    color: #15caa5
+}
+
+.section-info {
+    background-image: linear-gradient(135deg, #57BB99 0%, #15caa5) !important;
+}
+
+.background {
+    background-image: linear-gradient(135deg,#57BB99 0%,#15caa5);
+}
+
+.service-item ul li a {
+    color: #0E1133
+}
+
+.main-items-list-info span, .main-items-list-info label {
+    color: #013870;
+}
+
+.main-items-list-info > li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.52) !important;
+}
+
+.active > .dropdown-container {
+    background: #fff;
+}
+
+.button-c:hover {
+    border-color: #15caa5;
+}
+
+    .button-c:hover:after, .button-c:after {
+        background-color: #15caa5;
+    }
+
+footer .service-footer a {
+    color: #013870;
+    opacity: .8;
+}
+
+    footer .service-footer a:hover, a.detail-box:hover:after {
+        color: #15caa5;
+        opacity: .9;
+    }
+
+    footer .service-footer a:after, a.detail-box:after {
+        border-top: 1px solid #15caa5;
+    }
+
+.item-other-texts-image {
+    background-color: #15caa5;
+}
+
+a:hover {
+    color: #5CDB94;
+}
+
+a {
+    color: #013870;
+}
+
+@media only screen and (max-width: 992px) {
+    .navigation-menu .list-nav li a {
+        background: #ffffff;
+        transition: all .3s ease-in-out;
+    }
+
+    .navigation-menu .list-nav li:hover > a {
+        background: #013870 !important;
+    }
+
+        .navigation-menu .list-nav li:hover > a span {
+            color: #15caa5 !important;
+            transition: all .3s ease-in-out;
+        }
+
+
+    .content-navigation-menu {
+        background: #ffffff;
+        border-color: #ffffff;
+        transition: all .3s ease-in-out;
+    }
+
+    .r-collapse {
+        background: #013870;
+        box-shadow: 1px 1px 4px #013870;
+    }
+
+    .list-nav > li.active > a, .list-nav > li.active > .dropdown-container li a {
+        background: #ffffff;
+        background-color: #ffffff
+    }
+
+    .list-nav > li.active span {
+        color: #013870 !important;
+        transition: all .3s ease-in-out;
+    }
+
+    .list-nav > li.active .btn-menu .bar1, .list-nav > li.active .btn-menu .bar2, .list-nav > li.active .btn-menu .bar3, .list-nav > li:hover .btn-menu .bar1, .list-nav > li:hover .btn-menu .bar2, .list-nav > li:hover .btn-menu .bar3 {
+        background: #15caa5
+    }
+}
+.product-item a.button:hover {
+    background-color: #013870;
+    color: #15caa5;
+}
+
+.product-item a.button {
+    color: #013870;
+    border: 1px solid #013870;
+}
