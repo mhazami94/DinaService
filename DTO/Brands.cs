@@ -20,6 +20,7 @@ namespace DTO
         }
 
         private string _title;
+        [DbType("nvarchar(MAX)")]
         public string Title
         {
             get { return _title; }
@@ -27,6 +28,7 @@ namespace DTO
         }
 
         private string _link;
+        [DbType("nvarchar(MAX)")]
         public string Link
         {
             get { return _title; }
@@ -42,6 +44,7 @@ namespace DTO
         }
 
         private string _slug;
+        [DbType("nvarchar(MAX)")]
         public string Slug
         {
             get { return _slug; }

@@ -7,9 +7,9 @@ using System.Text;
 
 namespace DAL
 {
-    public sealed class ContentDA : DALBase<Content>
+    public sealed class ContentsDA : DALBase<Contents>
     {
-        public ContentDA(IConnectionHandler connectionHandler) : base(connectionHandler)
+        public ContentsDA(IConnectionHandler connectionHandler) : base(connectionHandler)
         {
         }
     }

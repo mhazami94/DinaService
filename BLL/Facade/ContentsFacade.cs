@@ -10,7 +10,7 @@ using static DataStructure.Tools.Enums;
 
 namespace BLL.Facade
 {
-    public sealed class ContentFacade : DinaServiceBaseFacade<Content>, IContentFacade
+    public sealed class ContentsFacade : DinaServiceBaseFacade<Contents>, IContentsFacade
     {
 
         public string GetSlug(string slug)
@@ -18,9 +18,9 @@ namespace BLL.Facade
             slug = slug.Replace(" ", "-");
             return slug;
         }
-        public List<Content> GetSiteMapContent(SliderProject place)
+        public List<Contents> GetSiteMapContent(SliderProject place)
         {
-            List<Content> list = base.Where(c => c.Place == (byte)place);
+            List<Contents> list = base.Where(c => c.Place == (byte)place);
             string url = string.Empty;
             if (place != SliderProject.Orgin)
             {
@@ -31,7 +31,7 @@ namespace BLL.Facade
                 url = $"http://dinaservice.com";
             }
 
-            foreach (Content item in list)
+            foreach (Contents item in list)
             {
                 if (string.IsNullOrEmpty(item.Link))
                 {
@@ -40,11 +40,11 @@ namespace BLL.Facade
             }
             return list;
         }
-        public List<Content> GetSiteMapContent()
+        public List<Contents> GetSiteMapContent()
         {
-            List<Content> list = base.GetAll();
+            List<Contents> list = base.GetAll();
             string url = string.Empty;
-            foreach (Content item in list)
+            foreach (Contents item in list)
             {
                 switch (item.Place)
                 {
@@ -78,7 +78,7 @@ namespace BLL.Facade
         }
 
 
-        public bool Update(Content content, IFormFile image)
+        public bool Update(Contents content, IFormFile image)
         {
             if (image != null)
             {
@@ -118,10 +118,10 @@ namespace BLL.Facade
             }
 
 
-            return new ContentBO().Update(ConnectionHandler, content);
+            return new ContentsBO().Update(ConnectionHandler, content);
         }
 
-        public bool Insert(Content content, IFormFile image)
+        public bool Insert(Contents content, IFormFile image)
         {
             if (image == null)
             {
@@ -143,7 +143,7 @@ namespace BLL.Facade
             }
 
             content.FileId = file.Id;
-            return new ContentBO().Insert(ConnectionHandler, content);
+            return new ContentsBO().Insert(ConnectionHandler, content);
 
         }
 
@@ -151,13 +151,13 @@ namespace BLL.Facade
 
 
 
-        public override bool Insert(Content obj)
+        public override bool Insert(Contents obj)
         {
             string url = string.Empty;
             obj.PublicDate = DateTime.Now;
 
 
-            return new ContentBO().Insert(ConnectionHandler, obj);
+            return new ContentsBO().Insert(ConnectionHandler, obj);
         }
 
 

@@ -1,0 +1,172 @@
+﻿@model List<Brands>
+
+
+    @{
+    /**/
+
+    var row = 0;
+
+    if (Model.Count() <= 15)
+    {
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        @foreach (var item in Model)
+        {
+        <ul>
+            <li>
+                <a href="/تعمیر-لوازم-خانگی/@item.BrandsId/@item.Slug.Replace(' ','-')">
+                    <span>@item.Title</span>
+                </a>
+            </li>
+
+        </ul>
+        }
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+    </div>
+    }
+    else if (Model.Count() > 15 && Model.Count() <= 30)
+    {
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        @for (int i = 0; i <= 14; i++)
+        {
+        <ul>
+            <li>
+                <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
+                    <span>@Model[i].Title</span>
+                </a>
+            </li>
+
+        </ul>
+        }
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        @for (int i = 15; i <= 29; i++)
+        {
+        <ul>
+            <li>
+                <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
+                    <span>@Model[i].Title</span>
+                </a>
+            </li>
+
+        </ul>
+        }
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+    </div>
+    }
+    else if (Model.Count() > 30 && Model.Count() <= 45)
+    {
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        @for (int i = 0; i <= 14; i++)
+        {
+        <ul>
+            <li>
+                <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
+                    <span>@Model[i].Title</span>
+                </a>
+            </li>
+
+        </ul>
+        }
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        @for (int i = 15; i <= 29; i++)
+        {
+        <ul>
+            <li>
+                <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
+                    <span>@Model[i].Title</span>
+                </a>
+            </li>
+
+        </ul>
+        }
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        @for (int i = 30; i <= 44; i++)
+        {
+        <ul>
+            <li>
+                <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
+                    <span>@Model[i].Title</span>
+                </a>
+            </li>
+
+        </ul>
+        }
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+    </div>
+    }
+    else if (Model.Count() > 45 && Model.Count() <= 60)
+    {
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        @for (int i = 0; i <= 14; i++)
+        {
+        <ul>
+            <li>
+                <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
+                    <span>@Model[i].Title</span>
+                </a>
+            </li>
+
+        </ul>
+        }
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        @for (int i = 15; i <= 29; i++)
+        {
+        <ul>
+            <li>
+                <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
+                    <span>@Model[i].Title</span>
+                </a>
+            </li>
+
+        </ul>
+        }
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        @for (int i = 30; i <= 44; i++)
+        {
+        <ul>
+            <li>
+                <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
+                    <span>@Model[i].Title</span>
+                </a>
+            </li>
+
+        </ul>
+        }
+    </div>
+    <div class="col-lg-3 col-md-6 col-md-6 col-xs-12">
+        @{
+        if (Model != null)
+        {
+        for (int i = 45; i < Model.Count(); i++)
+        {
+        <ul>
+            <li>
+                <a href="/تعمیر-لوازم-خانگی/@Model[i].BrandsId/@Model[i].Slug.Replace(' ','-')">
+                    <span>@Model[i].Title</span>
+                </a>
+            </li>
+
+        </ul>
+        }
+        }
+        }
+
+    </div>
+    }
+
+    }
+
+

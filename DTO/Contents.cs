@@ -4,7 +4,8 @@ using Azami.Framework;
 
 namespace DTO
 {
-    public class Content : DataStructureBase<Content>
+    [Serializable]
+    public class Contents : DataStructureBase<Contents>
     {
         private int _id;
         [Key(true)]
@@ -25,6 +26,7 @@ namespace DTO
 
 
         private string _title;
+        [DbType("nvarchar(150)")]
         public string Title
         {
             get { return _title; }
@@ -32,6 +34,7 @@ namespace DTO
         }
 
         private string _description;
+        [DbType("nvarchar(MAX)")]
         public string Description
         {
             get { return _description; }
@@ -39,6 +42,7 @@ namespace DTO
         }
 
         private string _alt;
+        [DbType("nvarchar(MAX)")]
         public string Alt
         {
             get { return _alt; }
@@ -46,6 +50,7 @@ namespace DTO
         }
 
         private string _keyWords;
+        [DbType("nvarchar(MAX)")]
         public string KeyWords
         {
             get { return _keyWords; }
@@ -53,6 +58,7 @@ namespace DTO
         }
 
         private string _slug;
+        [DbType("nvarchar(MAX)")]
         public string Slug
         {
             get { return _slug; }

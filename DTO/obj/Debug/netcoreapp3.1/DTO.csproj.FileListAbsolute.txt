@@ -9,5 +9,4 @@ C:\WorkSpace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.pdb
 C:\WorkSpace\DinaService\DTO\bin\Debug\netcoreapp3.1\Azami.dll
 C:\WorkSpace\DinaService\DTO\bin\Debug\netcoreapp3.1\Azami.Framework.dll
 C:\WorkSpace\DinaService\DTO\bin\Debug\netcoreapp3.1\Azami.Utility.dll
-C:\WorkSpace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.AssemblyReference.cache
 C:\WorkSpace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CopyComplete

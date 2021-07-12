@@ -9,6 +9,7 @@ namespace DTO
     {
         private string _id;
         [Key(false)]
+        [DbType("nvarchar(200)")]
         public string Id
         {
             get { return _id; }
@@ -16,6 +17,7 @@ namespace DTO
         }
 
         private string _title;
+        [DbType("nvarchar(200)")]
         public string Title
         {
             get { return _title; }
@@ -23,6 +25,7 @@ namespace DTO
         }
 
         private string _slug;
+        [DbType("nvarchar(200)")]
         public string Slug
         {
             get { return _slug; }
@@ -30,6 +33,7 @@ namespace DTO
         }
 
         private int _video;
+        [DbType("int")]
         public int Video
         {
             get { return _video; }
@@ -37,6 +41,7 @@ namespace DTO
         }
 
         private string _remark;
+        [DbType("nvarchar(4000)")]
         public string Remark
         {
             get { return _remark; }
@@ -44,6 +49,7 @@ namespace DTO
         }
 
         private byte _position;
+        [DbType("tinyint")]
         public byte Position
         {
             get { return _position; }
@@ -51,6 +57,7 @@ namespace DTO
         }
 
         private string _videoDesc;
+        [DbType("nvarchar(MAX)")]
         public string VideoDesc
         {
             get { return _videoDesc; }

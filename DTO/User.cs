@@ -8,6 +8,7 @@ using Azami.Framework;
 
 namespace DTO
 {
+    [Serializable]
     public sealed class User : DataStructureBase<User>
     {
         private Guid _id;
@@ -20,6 +21,7 @@ namespace DTO
         }
 
         private string _firstName;
+        [DbType("nvarchar(50)")]
         public string FirstName
         {
             get { return _firstName; }
@@ -27,14 +29,16 @@ namespace DTO
         }
 
         private string _lastName;
+        [DbType("nvarchar(50)")]
         public string LastName
         {
-            get { return _firstName; }
-            set { SetPropertyValue("FirstName", value); }
+            get { return _lastName; }
+            set { SetPropertyValue("LastName", value); }
         }
 
 
         private string _username;
+        [DbType("nvarchar(150)")]
         public string Username
         {
             get { return _username; }
@@ -42,6 +46,7 @@ namespace DTO
         }
 
         private string _password;
+        [DbType("nvarchar(max)")]
         public string Password
         {
             get { return _password; }

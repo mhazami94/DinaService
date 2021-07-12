@@ -7,8 +7,8 @@ using System.Text;
 
 namespace BLL.Interfaces
 {
-    public interface IContentFacade : IBaseFacade<Content>
+    public interface IContentsFacade : IBaseFacade<Contents>
     {
-        List<Content> GetSiteMapContent(Enums.SliderProject orgin);
+        List<Contents> GetSiteMapContent(Enums.SliderProject orgin);
     }
 }

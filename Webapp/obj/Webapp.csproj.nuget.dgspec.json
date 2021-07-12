@@ -258,6 +258,14 @@
               "target": "Package",
               "version": "[13.0.1, )"
             },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            },
             "WebMarkupMin.AspNetCore3": {
               "target": "Package",
               "version": "[2.10.0, )"

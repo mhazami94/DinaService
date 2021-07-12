@@ -21,6 +21,7 @@ namespace DTO
 
         private byte[] _context;
         [DbType("varbinary(MAX)")]
+        [IsNullable]
         public byte[] Context
         {
             get { return _context; }
@@ -28,6 +29,7 @@ namespace DTO
         }
 
         private string _contextType;
+        [DbType("nvarchar(10)")]
         public string ContextType
         {
             get { return _contextType; }
@@ -35,6 +37,7 @@ namespace DTO
         }
 
         private string _title;
+        [DbType("nvarchar(50)")]
         public string Title
         {
             get { return _title; }

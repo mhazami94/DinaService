@@ -16,11 +16,11 @@ namespace DinaService.Controllers
             return View();
         }
 
-        public IActionResult ShowImage(int id)
-        {
-            File model = DinaServiceComponent.Instance.FileFacade.Get(id);
-            return File(model.Context, "image/jpg"); ;
-        }
+        //public IActionResult ShowImage(int id)
+        //{
+        //    File model = DinaServiceComponent.Instance.FileFacade.Get(id);
+        //    return File(model.Context, "image/jpg"); ;
+        //}
         public IActionResult GenerateMenu()
         {
             List<Brands> list = DinaServiceComponent.Instance.BrandsFacade.GetAll();
@@ -37,7 +37,12 @@ namespace DinaService.Controllers
             return View();
         }
 
-
+        [Route("filehanlder/{id}")]
+        public IActionResult FileHandler(int id)
+        {
+            File model = DinaServiceComponent.Instance.FileFacade.Get(id);
+            return File(model.Context, model.ContextType);
+        }
 
         public IActionResult RegisterRequest()
         {

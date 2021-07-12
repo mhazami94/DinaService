@@ -37,11 +37,11 @@ namespace BLL
             }
         }
 
-        public IContentFacade ContentFacade
+        public IContentsFacade ContentFacade
         {
             get
             {
-                return new ContentFacade();
+                return new ContentsFacade();
             }
         }
         public IFileFacade FileFacade

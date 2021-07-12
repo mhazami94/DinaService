@@ -10,10 +10,10 @@ using static DataStructure.Tools.Enums;
 
 namespace BLL.BO
 {
-    public sealed class ContentBO : BusinessBase<Content>
+    public sealed class ContentsBO : BusinessBase<Contents>
     {
 
-        protected override void CheckConstraint(IConnectionHandler connectionHandler, Content obj)
+        protected override void CheckConstraint(IConnectionHandler connectionHandler, Contents obj)
         {
             if (string.IsNullOrEmpty(obj.Title))
             {

@@ -29,7 +29,7 @@ namespace DataStructure.Tools
         }
 
 
-        public enum ApplicationType : byte
+        public enum ApplicationType : int
         {
             [Display(Name = "انتخاب کنید")]
             [Description("")]
