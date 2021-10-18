@@ -12,4 +12,5 @@ C:\WorkSpace\DinaService\DAL\bin\Debug\netcoreapp3.1\Azami.Utility.dll
 C:\WorkSpace\DinaService\DAL\bin\Debug\netcoreapp3.1\DTO.dll
 C:\WorkSpace\DinaService\DAL\bin\Debug\netcoreapp3.1\DTO.pdb
 C:\WorkSpace\DinaService\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+C:\WorkSpace\DinaService\DAL\obj\Debug\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
 C:\WorkSpace\DinaService\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete

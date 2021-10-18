@@ -3,19 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Webapp", "Webapp\Webapp.csproj", "{34FA7E17-2A37-4DFA-A45C-541802D4D694}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Webapp", "Webapp\Webapp.csproj", "{34FA7E17-2A37-4DFA-A45C-541802D4D694}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{CE3D8D5E-0970-4125-AE1F-4E84AEF9095D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "BLL\BLL.csproj", "{CE3D8D5E-0970-4125-AE1F-4E84AEF9095D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{9BFEC8C7-CD87-487B-A0E0-ACB8DFEF166C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTO", "DTO\DTO.csproj", "{9BFEC8C7-CD87-487B-A0E0-ACB8DFEF166C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{BA82A562-3668-48E3-81DD-ECA801DA86AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{BA82A562-3668-48E3-81DD-ECA801DA86AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TParty", "TParty", "{11C4EE94-68AC-4506-9456-21EF4D1502E7}"
 	ProjectSection(SolutionItems) = preProject
 		TParty\Azami.dll = TParty\Azami.dll
 		TParty\Azami.Framework.dll = TParty\Azami.Framework.dll
 		TParty\Azami.Utility.dll = TParty\Azami.Utility.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{7C862E86-E2D9-4839-A3A6-085778EC0F20}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\20211018.sql = Scripts\20211018.sql
 	EndProjectSection
 EndProject
 Global

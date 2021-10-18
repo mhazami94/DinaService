@@ -16,40 +16,56 @@ namespace DTO
         public int Id
         {
             get { return _id; }
-            set { base.SetPropertyValue("Id", value); }
+            set { SetPropertyValue("Id", value); }
         }
 
-        private byte[] _context;
-        [DbType("varbinary(MAX)")]
-        [IsNullable]
-        public byte[] Context
+        private string _name;
+        [DbType("nvarchar(100)")]
+        public string Name
         {
-            get { return _context; }
-            set { base.SetPropertyValue("Context", value); }
+            get { return _name; }
+            set { SetPropertyValue("Name", value); }
         }
 
-        private string _contextType;
-        [DbType("nvarchar(10)")]
-        public string ContextType
-        {
-            get { return _contextType; }
-            set { base.SetPropertyValue("ContextType", value); }
-        }
-
-        private string _title;
-        [DbType("nvarchar(50)")]
-        public string Title
-        {
-            get { return _title; }
-            set { base.SetPropertyValue("Title", value); }
-        }
-
-        private int _fileSize;
+        private int _size;
         [DbType("int")]
-        public int FileSize
+        public int Size
         {
-            get { return _fileSize; }
-            set { base.SetPropertyValue("FileSize", value); }
+            get { return _size; }
+            set { SetPropertyValue("Size", value); }
+        }
+
+        private string _contentType;
+        [DbType("nvarchar(500)")]
+        public string ContentType
+        {
+            get { return _contentType; }
+            set { SetPropertyValue("ContentType", value); }
+        }
+
+        private string _extension;
+        [DbType("varchar(10)")]
+        public string Extension
+        {
+            get { return _extension; }
+            set { SetPropertyValue("Extension", value); }
+        }
+
+        private byte[] _content;
+        [DbType("varbinary(MAX)")]
+        public byte[] Content
+        {
+            get { return _content; }
+            set { SetPropertyValue("Content", value); }
+        }
+
+  
+        private DateTime _createDate;
+        [DbType("datetime")]
+        public DateTime CreateDate
+        {
+            get { return _createDate; }
+            set { SetPropertyValue("CreateDate", value); }
         }
     }
 }

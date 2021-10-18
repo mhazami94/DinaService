@@ -59,21 +59,23 @@
             <div class="contact-form">
                 <div class="item-contact-form">
                     <span>* نام و نام خانوادگی </span>
-                    <input type="text" name="name" value="" placeholder="نمونه: سید علی میرزایی" />
+                    <input type="text" name="name" value="" />
                 </div>
                 <div class="item-contact-form">
                     <span> * آدرس </span>
-                    <input type="text" name="name" value="" placeholder="" />
+                    <input type="text" name="name" value="" />
                 </div>
                 <div class="item-contact-form">
                     <span>* پرس و جو شما در مورد چیست؟ </span>
-                    <select>
+                    <select asp-items="Html.GetEnumSelectList<DataStructure.Tools.Enums.ApplicationType>()">
                         <option value="value">لطفا انتخاب کنید</option>
+                        <option value="value">تعمیر یخچال</option>
+                        <option value="value">تعمیر لباسشویی</option>
                     </select>
                 </div>
                 <div class="item-contact-form">
                     <span>* شماره تماس </span>
-                    <input type="text" name="name" value="" placeholder="+98 21 xxxx xxxx" />
+                    <input type="text" name="name" value="" />
                 </div>
                 <div class="item-contact-form">
 

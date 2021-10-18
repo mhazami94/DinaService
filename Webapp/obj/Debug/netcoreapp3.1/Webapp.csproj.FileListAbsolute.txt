@@ -95,3 +95,4 @@ C:\WorkSpace\DinaService\Webapp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcor
 C:\WorkSpace\DinaService\Webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\WorkSpace\DinaService\Webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Brands\List.cshtml.g.cs
+C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Webapp.GeneratedMSBuildEditorConfig.editorconfig

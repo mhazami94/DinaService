@@ -47,28 +47,45 @@
                                 <div id="accordian" class="content-navigation-menu">
                                     <ul class="list-nav">
 
+                                        @*<li>
+                                                <a class="dropdown-btn">
+                                                    <span>برندها ی لوازم خانگی</span>
+
+                                                    <ul class="btn-menu">
+                                                        <li class="bar1"></li>
+                                                        <li class="bar3"></li>
+                                                    </ul>
+
+                                                </a>
+                                                <ul class="mega-menu">
+
+                                                        <li>
+                                                            <div class="row">
+                                                                @await Component.InvokeAsync("MenuComponent")
+                                                            </div>
+                                                        </li>
+
+                                                    </ul>
+                                            </li>*@
+
                                         <li>
-                                            <a class="dropdown-btn">
-                                                <span>برندها ی لوازم خانگی</span>
-
-                                                <ul class="btn-menu">
-                                                    <li class="bar1"></li>
-                                                    <li class="bar3"></li>
-                                                </ul>
-
+                                            <a href="/">
+                                                <span>صفحه اصلی</span>
                                             </a>
-                                            <ul class="mega-menu">
-
-                                                    <li>
-                                                        <div class="row">
-                                                            @await Component.InvokeAsync("MenuComponent")
-                                                        </div>
-                                                    </li>
-
-                                                </ul>
                                         </li>
-
-
+                                        <li>
+                                            <a>
+                                                <span>خدمات</span>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">تعمیر یخچال</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">تعمیر لباسشویی</a>
+                                                </li>
+                                            </ul>
+                                        </li>
 
                                         <li>
                                             <a href="/Articles">
@@ -99,7 +116,7 @@
                         </li>
                     </ul>
                 </div>
-               @await Component.InvokeAsync("SearchComponent")
+                @await Component.InvokeAsync("SearchComponent")
             </div>
 
         </div>
@@ -193,7 +210,7 @@
             </footer>
         </main>
     </div>
-   
+
 
 
 

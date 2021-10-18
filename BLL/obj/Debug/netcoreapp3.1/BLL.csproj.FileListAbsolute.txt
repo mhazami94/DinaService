@@ -14,4 +14,5 @@ C:\WorkSpace\DinaService\BLL\bin\Debug\netcoreapp3.1\DTO.dll
 C:\WorkSpace\DinaService\BLL\bin\Debug\netcoreapp3.1\DAL.pdb
 C:\WorkSpace\DinaService\BLL\bin\Debug\netcoreapp3.1\DTO.pdb
 C:\WorkSpace\DinaService\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.AssemblyReference.cache
+C:\WorkSpace\DinaService\BLL\obj\Debug\netcoreapp3.1\BLL.GeneratedMSBuildEditorConfig.editorconfig
 C:\WorkSpace\DinaService\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete

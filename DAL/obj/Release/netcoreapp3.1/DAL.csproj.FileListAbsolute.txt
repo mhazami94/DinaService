@@ -1,0 +1,16 @@
+C:\WorkSpace\DinaService\DAL\bin\Release\netcoreapp3.1\DAL.deps.json
+C:\WorkSpace\DinaService\DAL\bin\Release\netcoreapp3.1\DAL.dll
+C:\WorkSpace\DinaService\DAL\bin\Release\netcoreapp3.1\DAL.pdb
+C:\WorkSpace\DinaService\DAL\bin\Release\netcoreapp3.1\Azami.dll
+C:\WorkSpace\DinaService\DAL\bin\Release\netcoreapp3.1\Azami.Framework.dll
+C:\WorkSpace\DinaService\DAL\bin\Release\netcoreapp3.1\Azami.Utility.dll
+C:\WorkSpace\DinaService\DAL\bin\Release\netcoreapp3.1\DTO.dll
+C:\WorkSpace\DinaService\DAL\bin\Release\netcoreapp3.1\DTO.pdb
+C:\WorkSpace\DinaService\DAL\obj\Release\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+C:\WorkSpace\DinaService\DAL\obj\Release\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\WorkSpace\DinaService\DAL\obj\Release\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+C:\WorkSpace\DinaService\DAL\obj\Release\netcoreapp3.1\DAL.AssemblyInfo.cs
+C:\WorkSpace\DinaService\DAL\obj\Release\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+C:\WorkSpace\DinaService\DAL\obj\Release\netcoreapp3.1\DAL.csproj.CopyComplete
+C:\WorkSpace\DinaService\DAL\obj\Release\netcoreapp3.1\DAL.dll
+C:\WorkSpace\DinaService\DAL\obj\Release\netcoreapp3.1\DAL.pdb
