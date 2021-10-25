@@ -9,7 +9,7 @@ using Azami.Framework;
 namespace DTO
 {
     [Serializable]
-    public sealed class User : DataStructureBase<User>
+    public sealed class Users : DataStructureBase<Users>
     {
         private Guid _id;
         [Key(false)]
@@ -56,6 +56,15 @@ namespace DTO
         #region temp
         [DisableAction(DiableAllAction = true)]
         public string ConfirmPassword { get; set; }
+
+        [DisableAction(DiableAllAction = true)]
+        public string FullName
+        {
+            get
+            {
+                return $"{FirstName} {LastName}";
+            }
+        }
         #endregion temp
     }
 }

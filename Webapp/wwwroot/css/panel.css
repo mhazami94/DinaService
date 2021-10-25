@@ -1,0 +1,115 @@
+﻿
+
+.sidebar {
+    padding-left: 0;
+}
+
+    .sidebar .nav-item .nav-link {
+        text-align: left;
+    }
+
+.topbar .navbar-search input {
+    text-align: left;
+}
+
+.dropdown-item {
+    text-align: left;
+    direction: ltr;
+}
+
+.login-main {
+    text-align: center;
+}
+
+    .login-main > img {
+        width: 200px;
+        margin-top: 30px;
+    }
+
+.sidebar .nav-item .nav-link[data-toggle=collapse]::after {
+    width: 1rem;
+    text-align: right;
+    float: right;
+    vertical-align: 0;
+    border: 0;
+    font-weight: 900;
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+}
+
+.sidebar .nav-item .nav-link[data-toggle=collapse].collapsed::after {
+    content: '\f105';
+}
+
+.sidebar .nav-item .collapse .collapse-inner .collapse-item, .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+    text-align: left;
+}
+
+.form-row {
+    text-align: left;
+}
+
+input[type="file"] {
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+.chart-guid-title {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+}
+
+.qrcode-box {
+    margin: 150px auto;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    position: relative;
+}
+
+    .qrcode-box:hover > .download-qrcode-hover {
+        display: block;
+    }
+
+    .qrcode-box img {
+        height: 198px;
+        width: 198px;
+    }
+
+.download-qrcode-mask {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: #333;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.download-qrcode-mask-link {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-size: 30px;
+    color: #fff;
+    background: #333;
+    opacity: 0.8;
+    z-index: 2;
+}
+
+    .download-qrcode-mask-link:hover {
+        color: #fff;
+    }
+
+.download-qrcode-hover {
+    display: none;
+}

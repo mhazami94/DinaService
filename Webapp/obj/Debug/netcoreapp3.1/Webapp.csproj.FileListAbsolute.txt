@@ -96,3 +96,10 @@ C:\WorkSpace\DinaService\Webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcore
 C:\WorkSpace\DinaService\Webapp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Brands\List.cshtml.g.cs
 C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Webapp.GeneratedMSBuildEditorConfig.editorconfig
+C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\ShowMessageComponent\ShowMessage.cshtml.g.cs
+C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\User\AccessDenied.cshtml.g.cs
+C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\User\Login.cshtml.g.cs
+C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_PanelLoginLayout.cshtml.g.cs
+C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
+C:\WorkSpace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\MainNavComponent\MainNav.cshtml.g.cs

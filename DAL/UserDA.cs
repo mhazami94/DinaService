@@ -7,7 +7,7 @@ using DTO;
 
 namespace DAL
 {
-    public sealed class UserDA : DALBase<User>
+    public sealed class UserDA : DALBase<Users>
     {
         public UserDA(IConnectionHandler connectionHandler) : base(connectionHandler)
         {

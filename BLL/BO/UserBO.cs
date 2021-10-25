@@ -8,16 +8,17 @@ using DTO;
 
 namespace BLL.BO
 {
-    public sealed class UserBO : BusinessBase<User>
+    public sealed class UserBO : BusinessBase<Users>
     {
-        public override bool Insert(IConnectionHandler connectionHandler, User obj)
+        public override bool Insert(IConnectionHandler connectionHandler, Users obj)
         {
-            obj.Id = Guid.NewGuid();
+            if (obj.Id == null || obj.Id == Guid.Empty)
+                obj.Id = Guid.NewGuid();
             return base.Insert(connectionHandler, obj);
         }
-        protected override void CheckConstraint(IConnectionHandler connectionHandler, User obj)
+        protected override void CheckConstraint(IConnectionHandler connectionHandler, Users obj)
         {
-            User user = base.FirstOrDefault(connectionHandler, c => c.Username == obj.Username);
+            Users user = base.FirstOrDefault(connectionHandler, c => c.Username == obj.Username);
             if (user != null)
             {
                 throw new Exception("کاربر دیگری با این نام کاربری در سامانه وجود دارد");
@@ -46,5 +47,21 @@ namespace BLL.BO
             obj.Password = StringUtils.HashPassword(obj.Password);
         }
 
+
+        internal Users Login(IConnectionHandler connectionHandler, string username, string password)
+        {
+            if (string.IsNullOrEmpty(password))
+                throw new KnownException("Password is required");
+            if (string.IsNullOrEmpty(username))
+                throw new KnownException("Username is required");
+            var pass = StringUtils.HashPassword(password);
+            return base.FirstOrDefault(connectionHandler, x => x.Username == username && x.Password == pass);
+        }
+
+        public override Users Get(IConnectionHandler connectionHandler, params object[] keys)
+        {
+            var user = base.Get(connectionHandler, keys);
+            return user;
+        }
     }
 }

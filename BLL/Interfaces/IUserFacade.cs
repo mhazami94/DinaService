@@ -6,7 +6,8 @@ using System.Text;
 
 namespace BLL.Interfaces
 {
-    public interface IUserFacade : IBaseFacade<User>
+    public interface IUserFacade : IBaseFacade<Users>
     {
+        Users Login(string username, string password);
     }
 }

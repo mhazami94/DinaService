@@ -1,0 +1,19 @@
+﻿@model Webapp.Helpers.ShowMessage
+
+
+@if (Model.Show)
+{
+<section id="message-box" class="message-box message-box-@Model.Type.ToString().ToLower()">
+    <span class="message-box-close" id="message-box-close">
+        <i class="fas fa-times"></i>
+    </span>
+    <p class="message-box-text">
+        @Model.Message
+    </p>
+
+    <script src="/js/showmessagebox.min.js"></script>
+</section>
+
+}
+
+

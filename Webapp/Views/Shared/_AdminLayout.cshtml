@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Panel</title>
+
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="~/favicon.ico" />
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="~/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="~/favicon-32x32.png" />
+    <link rel="icon" type="image/x-icon" sizes="96x96" href="~/favicon-96x96.png" />
+
+    <link rel="icon" type="image/png" href="/img/logo.png" />
+    <link href="/author/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="~/css/common.min.css" rel="stylesheet" />
+    <link href="/author/css/sb-admin-2.min.css" rel="stylesheet" />
+    <link href="/author/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="~/css/summernote-bs4.min.css" rel="stylesheet" />
+    <link href="~/css/panel.css" rel="stylesheet" />
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery.easing.min.js"></script>
+
+    <script src="~/js/Chart.min.js"></script>
+
+</head>
+<body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/Dashboard">
+                <div class="sidebar-brand-icon">
+                    <img src="/img/White.png" width="100" />
+                </div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0" />
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="/Dashboard">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Stablex</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider" />
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Management
+            </div>
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/Dashboard" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fa fa-fw fa-tachometer-alt"></i>
+                    <span>
+                        Dashboard
+                    </span>
+                </a>
+            </li>
+
+
+         
+            @*data-toggle="collapse"*@
+            @*<li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-lock"></i>
+                    <span>
+                        Security
+                    </span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="/Users">Users</a>
+                    </div>
+                </div>
+            </li>*@
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="/Messages" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-envelope-open-text"></i>
+                    <span>
+                        Contact
+                    </span>
+                </a>
+            </li>
+            @*<li class="nav-item">
+            <a class="nav-link collapsed" href="/Products" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fab fa-bitcoin"></i>
+                <span>
+                    Products
+                </span>
+            </a>
+        </li>*@
+
+          
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTBLog" aria-expanded="true" aria-controls="collapseTBLog">
+                    <i class="fas fa-blog"></i>
+                    <span>
+                        Blogs
+                    </span>
+                </a>
+                <div id="collapseTBLog" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="/Management/Blogs">Blogs</a>
+                    </div>
+                </div>
+            </li>
+          
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            @await Component.InvokeAsync("MainNavComponent")
+                            <!-- Dropdown - User Information -->
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+                <!-- Begin Page Content -->
+                <!-- /.container-fluid -->
+                @RenderBody()
+
+            </div>
+            <!-- End of Main Content -->
+            <!-- Footer -->
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Signout</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Do you want to exit your admin panel ?</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="/User/SignOut">Signout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @await Component.InvokeAsync("ShowMessageComponent")
+
+
+
+    <script src="/author/js/jquery.dataTables.min.js"></script>
+    <script src="/author/js/dataTables.bootstrap4.js"></script>
+    <script src="/author/js/datatables-demo.js"></script>
+    <script src="~/js/summernote-bs4.min.js"></script>
+    <script src="~/js/sb-admin-2.min.js"></script>
+    @RenderSection("Scripts", required: false)
+  
+    <script src="/js/internal/summernoteadmin.min.js"></script>
+</body>
+</html>
