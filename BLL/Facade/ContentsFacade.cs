@@ -82,11 +82,11 @@ namespace BLL.Facade
         {
             if (image != null)
             {
-                File oldfile = new FileBO().Get(ConnectionHandler, content.FileId);
-                File file = null;
+                Files oldfile = new FilesBO().Get(ConnectionHandler, content.FileId);
+                Files file = null;
                 if (oldfile == null)
                 {
-                    file = new File();
+                    file = new Files();
                 }
                 else
                 {
@@ -100,7 +100,7 @@ namespace BLL.Facade
                 //file.FileSize = image.ContentLength / 1024;
                 if (oldfile == null)
                 {
-                    if (!new FileBO().Insert(ConnectionHandler, file))
+                    if (!new FilesBO().Insert(ConnectionHandler, file))
                     {
                         throw new Exception("خطا در ویرایش تصویر");
                     }
@@ -108,7 +108,7 @@ namespace BLL.Facade
                 }
                 else
                 {
-                    if (!new FileBO().Update(ConnectionHandler, file))
+                    if (!new FilesBO().Update(ConnectionHandler, file))
                     {
                         throw new Exception("خطا در ویرایش تصویر");
                     }
@@ -128,7 +128,7 @@ namespace BLL.Facade
                 throw new Exception("لطفا عکس مطلب را انتخاب کنید");
             }
 
-            File file = new File
+            Files file = new Files
             {
                 //Context = new byte[image.ContentLength]
             };
@@ -137,7 +137,7 @@ namespace BLL.Facade
             //file.Title = image.FileName;
             //file.FileSize = image.ContentLength / 1024;
 
-            if (!new FileBO().Insert(ConnectionHandler, file))
+            if (!new FilesBO().Insert(ConnectionHandler, file))
             {
                 throw new Exception("خطا در ثبت تصویر");
             }

@@ -17,8 +17,6 @@ namespace BLL.BO
                 throw new KnownException("Please insert title");
             if (string.IsNullOrEmpty(item.Abstract))
                 throw new KnownException("Please insert abstract");
-
-
             base.CheckConstraint(connectionHandler, item);
         }
         public async Task<List<Article>> SearchBlog(IConnectionHandler connectionHandler, Expression<Func<Article, bool>> expression, bool simpleload = false)

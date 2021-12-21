@@ -16,9 +16,9 @@ namespace DTO
             set { base.SetPropertyValue("Id", value); }
         }
 
-        private int _fileId;
-        [DbType("int")]
-        public int FileId
+        private Guid _fileId;
+        [DbType("uniqueidentifier")]
+        public Guid FileId
         {
             get { return _fileId; }
             set { base.SetPropertyValue("FileId", value); }

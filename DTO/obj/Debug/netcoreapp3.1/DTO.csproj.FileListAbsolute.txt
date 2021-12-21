@@ -10,3 +10,17 @@ C:\WorkSpace\DinaService\DTO\bin\Debug\netcoreapp3.1\Azami.dll
 C:\WorkSpace\DinaService\DTO\bin\Debug\netcoreapp3.1\Azami.Framework.dll
 C:\WorkSpace\DinaService\DTO\bin\Debug\netcoreapp3.1\Azami.Utility.dll
 C:\WorkSpace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\DinaService\DTO\bin\Debug\netcoreapp3.1\DTO.deps.json
+D:\Workspace\DinaService\DTO\bin\Debug\netcoreapp3.1\DTO.dll
+D:\Workspace\DinaService\DTO\bin\Debug\netcoreapp3.1\DTO.pdb
+D:\Workspace\DinaService\DTO\bin\Debug\netcoreapp3.1\Azami.dll
+D:\Workspace\DinaService\DTO\bin\Debug\netcoreapp3.1\Azami.Framework.dll
+D:\Workspace\DinaService\DTO\bin\Debug\netcoreapp3.1\Azami.Utility.dll
+D:\Workspace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.AssemblyReference.cache
+D:\Workspace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfoInputs.cache
+D:\Workspace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfo.cs
+D:\Workspace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
+D:\Workspace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CopyComplete
+D:\Workspace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.dll
+D:\Workspace\DinaService\DTO\obj\Debug\netcoreapp3.1\DTO.pdb

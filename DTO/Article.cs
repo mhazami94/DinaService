@@ -9,7 +9,8 @@ namespace DTO
     {
         public Article()
         {
-            Enabled = false;
+            Publish = false;
+            Url = string.Empty;
         }
         private int _id;
         [Key(true)]
@@ -20,23 +21,30 @@ namespace DTO
             set { SetPropertyValue("Id", value); }
         }
 
-        private int _imageId;
+        private Guid? _imageId;
+        [IsNullable]
         [DbType("uniqueidentifier")]
-        public int ImageId
+        public Guid? ImageId
         {
             get { return _imageId; }
             set { SetPropertyValue("ImageId", value); }
         }
-        [Assosiation(PropName = "ImageId")]
-        public File Image { get; set; }
-
+     
 
         private string _title;
-        [DbType("nvarchar(50)")]
+        [DbType("nvarchar(250)")]
         public string Title
         {
             get { return _title; }
             set { SetPropertyValue("Title", value); }
+        }
+
+        private string _pageTitle;
+        [DbType("nvarchar(max)")]
+        public string PageTitle
+        {
+            get { return _pageTitle; }
+            set { SetPropertyValue("PageTitle", value); }
         }
 
         private string _abstract;
@@ -56,13 +64,6 @@ namespace DTO
             set { SetPropertyValue("Context", value); }
         }
 
-        private bool _enabled;
-        [DbType("bit")]
-        public bool Enabled
-        {
-            get { return _enabled; }
-            set { SetPropertyValue("Enabled", value); }
-        }
 
         private byte _order;
         [DbType("tinyint")]
@@ -72,7 +73,7 @@ namespace DTO
             set { SetPropertyValue("Order", value); }
         }
 
-      
+
         private int _views;
         [DbType("int")]
         public int Views
@@ -88,6 +89,36 @@ namespace DTO
             get { return _registerDate; }
             set { base.SetPropertyValue("RegisterDate", value); }
         }
+
+
+        private string _metaDescription;
+        [DbType("nvarchar(max)")]
+        [IsNullable]
+        public string MetaDescription
+        {
+            get { return _metaDescription; }
+            set { base.SetPropertyValue("MetaDescription", value); }
+        }
+
+        private string _url;
+        [DbType("nvarchar(1000)")]
+        [IsNullable]
+        public string Url
+        {
+            get { return _url; }
+            set { base.SetPropertyValue("Url", value); }
+        }
+
+        private bool _publish;
+        [DbType("bit")]
+        public bool Publish
+        {
+            get { return _publish; }
+            set { base.SetPropertyValue("Publish", value); }
+        }
+
+
+
 
     }
 }

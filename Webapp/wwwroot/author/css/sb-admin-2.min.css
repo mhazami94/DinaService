@@ -10332,6 +10332,10 @@ a:focus {
             font-size: 2rem
         }
 
+        .sidebar .sidebar-brand > img {
+            width: 62%;
+        }
+
         .sidebar .sidebar-brand .sidebar-brand-text {
             display: none
         }
@@ -10464,13 +10468,17 @@ a:focus {
             font-size: 2rem
         }
 
-        .sidebar.toggled .sidebar-brand .sidebar-brand-text {
-            display: none
-        }
+    .sidebar-brand-icon > img {
+        width: 62%;
+    }
 
-        .sidebar.toggled .sidebar-heading {
-            text-align: center
-        }
+    .sidebar.toggled .sidebar-brand .sidebar-brand-text {
+        display: none
+    }
+
+    .sidebar.toggled .sidebar-heading {
+        text-align: center
+    }
 }
 
 .sidebar-light .sidebar-brand {

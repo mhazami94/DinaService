@@ -44,11 +44,11 @@ namespace BLL
                 return new ContentsFacade();
             }
         }
-        public IFileFacade FileFacade
+        public IFilesFacade FileFacade
         {
             get
             {
-                return new FileFacade();
+                return new FilesFacade();
             }
         }
 

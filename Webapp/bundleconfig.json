@@ -1,5 +1,12 @@
 [
   {
+    "outputFileName": "wwwroot/App_theme/DinaTheme/css/saba.min.css",
+    //"inputFiles": [ "wwwroot/**/!(*.min).css" ],
+    "inputFiles": [
+      "wwwroot/App_theme/DinaTheme/css/saba.css"
+    ]
+  },
+  {
     "outputFileName": "wwwroot/App_theme/DinaTheme/slider/assets/web/assets/mobirise-icons/mobirise-icons.min.css",
     //"inputFiles": [ "wwwroot/**/!(*.min).css" ],
     "inputFiles": [

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eAvq+2EYaPWBofLzchOMhRj28lnn/5khjJPpeVZPPrcovBestu/AOeXGPVU7hrmkamkuIBMqTVq+HQDfkgJRcg==",
+  "dgSpecHash": "X2MjsotHJe6pVcnOg9Mfz2p532D7l5/3lvemf6cJCDk0ziZQBl9sMKIEfibTsg4bZgEom4RwoFT+fPde2VX+2g==",
   "success": true,
-  "projectFilePath": "C:\\WorkSpace\\DinaService\\DAL\\DAL.csproj",
+  "projectFilePath": "D:\\Workspace\\DinaService\\DAL\\DAL.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,0 +1,88 @@
+﻿@model Article
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="container-fluid">
+
+    <form method="post" enctype="multipart/form-data" action="/Article/Edit">
+        @Html.AntiForgeryToken()
+        <input type="hidden" value="@Model.Id" name="Id" id="Id" />
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Title</label>
+                <input type="text" class="form-control" value="@Model.Title" asp-for="@Model.Title" name="Title" id="Title" />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Order </label>
+                <input type="text" class="form-control" value="@Model.Order" asp-for="@Model.Order" name="Order" id="Order" />
+
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Page Title</label>
+                <input type="text" class="form-control" value="@Model.PageTitle" asp-for="@Model.PageTitle" name="PageTitle" id="PageTitle" />
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Meta Description </label>
+                <textarea class="form-control" rows="5" asp-for="@Model.MetaDescription" name="MetaDescription" id="MetaDescription">@Model.MetaDescription</textarea>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="FreeStydy">Do you wanna publish it ?</label>
+                <div class="form-control">
+                    <input type="radio" value="true" @(Model.Publish ? "checked='checked'" : "") name="Publish" id="Publish">Yes
+                    <input type="radio" @(!Model.Publish ? "checked='checked'" : "") value="false" name="Publish" id="Publish">No
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Url </label>
+                <input type="text" class="form-control" value="@Model.Url" asp-for="@Model.Url" name="Url" id="Url" />
+
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom04">Banner</label>
+                <div class="form-control">
+                    <input type="file" name="image" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                    @if (Model.ImageId != null && Model.ImageId != Guid.Empty)
+                    {
+                        <img src="/filehanlder/@Model.ImageId" width="100" />
+                    }
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="FreeStydy">Abstract</label>
+                <div>
+                    <textarea name="Abstract" class="summernote" id="Abstract">@Model.Abstract</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="FreeStydy">Context</label>
+                <div>
+                    <textarea name="Context" class="summernote" id="Context">@Model.Context</textarea>
+                </div>
+            </div>
+        </div>
+
+
+        <button class="btn btn-primary" type="submit">Save</button>
+        <a class="btn btn-warning" href="/Article/Index">Return</a>
+
+    </form>
+
+</div>
+

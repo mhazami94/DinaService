@@ -48,8 +48,8 @@ namespace DinaService.Controllers
         [Route("filehanlder/{id}")]
         public IActionResult FileHandler(int id)
         {
-            File model = DinaServiceComponent.Instance.FileFacade.Get(id);
-            return File(model.Content, model.ContentType);
+            Files model = DinaServiceComponent.Instance.FileFacade.Get(id);
+            return File(model.Context, model.ContentType);
         }
 
         public IActionResult RegisterRequest()

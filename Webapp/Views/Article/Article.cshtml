@@ -1,0 +1,36 @@
+﻿@model Article
+@{
+    ViewBag.Title = Model.PageTitle;
+    ViewBag.Des = Model.MetaDescription;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="product-page article-page">
+    <article class="des-article">
+
+        <div class="article-header" style="@(Model.ImageId!=null?$"background: url('/filehanlder/{Model.ImageId}')":"width:height:150px")">
+            <h1>
+                @Model.Title
+            </h1>
+        </div>
+
+        <div class="des-post row">
+
+            <div class="des-post-content-article des-page-content col-lg-12 col-sm-12 col-md-12 col-xs-12">
+
+                @Html.Raw(Model.Context)
+
+                <div class="items-post">
+                    <div>
+
+                        <p>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </article>
+
+</div>

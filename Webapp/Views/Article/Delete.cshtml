@@ -1,0 +1,78 @@
+﻿@model Article
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+
+    <form method="post" enctype="multipart/form-data" action="/Article/Delete">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="Id" id="Id" value="@Model.Id" />
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Title</label>
+                <label class="form-control">@Model.Title</label>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Order </label>
+                <label class="form-control">@Model.Order</label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom01">Page Title</label>
+                <label class="form-control">@Model.PageTitle</label>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Meta Description </label>
+                <label class="form-control">@Model.MetaDescription</label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-6 mb-3">
+                <label for="FreeStydy">Do you wanna publish it ?</label>
+                <label class="form-control">@(Model.Publish?"yes":"no")</label>
+            </div>
+            <div class="col-md-6 mb-3">
+                <label for="validationCustom02">Url </label>
+                <label class="form-control">@Model.Url</label>
+            </div>
+
+        </div>
+
+        <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom04">Banner</label>
+                    <div class="form-control">
+                       <img src="/filehanlder/@Model.ImageId" width="150" />
+                    </div>
+                </div>
+
+            </div>
+
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="FreeStydy">Abstract</label>
+                <div>
+                    <label class="form-control">@Html.Raw(Model.Abstract)</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="FreeStydy">Context</label>
+                <div>
+                    <label class="form-control">@Html.Raw(Model.Context)</label>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-danger" type="submit">Delete</button>
+        <a class="btn btn-warning" href="/Article/Index">Return</a>
+
+    </form>
+
+</div>
+
