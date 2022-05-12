@@ -36,13 +36,13 @@ namespace DinaService.Controllers
         }
 
         [HttpGet("/تماس-باما")]
-        public IActionResult ContactUs(int? id, string slug)
+        public IActionResult ContactUs()
         {
             return View();
         }
 
         [HttpGet("/درباره-ما")]
-        public IActionResult AboutUs(int? id, string slug)
+        public IActionResult AboutUs()
         {
             return View();
         }

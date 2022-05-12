@@ -14,66 +14,7 @@ namespace BLL.BO
         //    {
         //        Link = "http://wash.dinaservice.com",
         //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Content/Category/1/تعمیر-ماشین-لباسشویی",
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Content/Category/2/تعمیر-ماشین-ظرفشویی"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Home/AboutUs/1/درباره-دیناسرویس"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Home/ContactUs/1/تماس-با-دیناسرویس"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Content/Category/3/تعمیر-ماشین-ظرفشویی"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Content/Category/3/تعمیرات-ماشین-ظرفشویی"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Content/Category/3/تعمیر-ماشین-لباسشویی"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Content/Category/3/تعمیرات-ماشین-لباسشویی"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Content/Category/3/تعمیرات-لوازم-خانگی"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Content/Category/3/مرکز-تعمیر-لوازم-خانگی"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/Content/Category/3/تعمیر-لوازم-خانگی"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/گازهاي-مورد-استفاده-در-یخچال-سازی/تعمیر-یخچال"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/تعمیر-برد-یخچال/تعمیر-یخچال"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/عیب-یابی-و-تعمیر-یخچال/تعمیر-یخچال"
-        //    });
-        //    result.Add(new SiteMap()
-        //    {
-        //        Link = "http://wash.dinaservice.com/عیب-یابی-و-تعمیر-لباسشویی/تعمیر-لباسشویی"
-        //    });
+     
         //    result.Add(new SiteMap()
         //    {
         //        Link = "http://wash.dinaservice.com/Articles"
