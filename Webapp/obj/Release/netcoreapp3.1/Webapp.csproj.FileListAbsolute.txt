@@ -278,3 +278,7 @@ D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\Webapp.csproj.CopyComp
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\Webapp.dll
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\Webapp.pdb
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\Webapp.genruntimeconfig.cache
+D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\Razor\Views\Home\ConsultantServices.cshtml.g.cs
+D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\Razor\Views\Home\DishWasher.cshtml.g.cs
+D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\Razor\Views\Home\fridge.cshtml.g.cs
+D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\Razor\Views\Home\WashingMachine.cshtml.g.cs

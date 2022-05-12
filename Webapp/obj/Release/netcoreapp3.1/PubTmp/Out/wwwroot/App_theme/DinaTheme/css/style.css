@@ -2318,11 +2318,36 @@ footer .service-footer .social-media a {
 
 .des-post-content-article {
     padding: 0 100px 100px 100px;
+    font-size: 15px;
 }
+
+    .des-post-content-article ul, .des-post-content-article ol {
+        text-align: right;
+    }
+
+        .des-post-content-article ul > li {
+            padding: 5px 0;
+        }
 
 @media(max-width:1000px) {
     .des-post-content {
         padding: 100px 50px;
+    }
+}
+
+@media(max-width: 768px) {
+    .des-post-content-article {
+        padding: 0 20px;
+    }
+
+    .des-page-content h2 {
+        margin-bottom: 35px;
+        font-size: 26px;
+        margin-top: 30px;
+    }
+
+    .des-post-content-article p > img {
+        width: 100% !important;
     }
 }
 
@@ -2343,6 +2368,11 @@ footer .service-footer .social-media a {
     margin: 35px 0 45px 0;
     font-size: 15px;
 }
+
+    .des-post-content-article p > img {
+        margin: 0 auto;
+        display: grid;
+    }
 
 .des-post-content-article h1 {
     font-size: 33px;
@@ -2389,6 +2419,10 @@ footer .service-footer .social-media a {
     color: #253858;
 }
 
+.article-list-page > h1 {
+    margin-bottom: 40px;
+}
+
 .article-list-page h2 {
     font-size: 30px;
     margin: 48px 0;
@@ -2403,7 +2437,7 @@ footer .service-footer .social-media a {
 }
 
 article.des-product {
-    height: 671.22px;
+    height: 460px;
 }
 
 
@@ -2743,121 +2777,129 @@ article.des-product {
         }
 
 
-@media (min-width: 1199px) and (max-width: 1190px) {
-    .btn-menu {
-        left: -30px !important;
+    @media (min-width: 1199px) and (max-width: 1190px) {
+        .btn-menu {
+            left: -30px !important;
+        }
     }
-}
 
-.btn-menu .bar1, .btn-menu .bar2, .btn-menu .bar3 {
-    width: 8px;
-    height: 1px;
-    background-color: #2f5ead;
-    margin: 4px 0;
-    transition: all 0.4s;
-}
+    .btn-menu .bar1, .btn-menu .bar2, .btn-menu .bar3 {
+        width: 8px;
+        height: 1px;
+        background-color: #2f5ead;
+        margin: 4px 0;
+        transition: all 0.4s;
+    }
 
-.btn-menu .bar1 {
-    transform: rotate(136deg);
-    right: -33px;
-    position: absolute;
-    bottom: -14px;
-}
+    .btn-menu .bar1 {
+        transform: rotate(136deg);
+        right: -33px;
+        position: absolute;
+        bottom: -14px;
+    }
 
-.btn-menu .bar3 {
-    transform: rotate(-138deg);
-    position: absolute;
-    left: 20px;
-    bottom: -14px;
-}
+    .btn-menu .bar3 {
+        transform: rotate(-138deg);
+        position: absolute;
+        left: 20px;
+        bottom: -14px;
+    }
 
-.btn-menu.icon-nav-change .bar1 {
-    transform: rotate(38deg) translate(-9px, 6px);
-    right: -42px;
-    bottom: -15px;
-}
+    .btn-menu.icon-nav-change .bar1 {
+        transform: rotate(38deg) translate(-9px, 6px);
+        right: -42px;
+        bottom: -15px;
+    }
 
-.btn-menu.icon-nav-change .bar3 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-    bottom: -4px;
-}
-
-#accordian li.active > ul.mega-menu {
-    padding: 15px;
-    overflow: hidden;
-}
-
-
-@media (min-width: 576px) {
+    .btn-menu.icon-nav-change .bar3 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+        bottom: -4px;
+    }
 
     #accordian li.active > ul.mega-menu {
-        min-width: 540px;
-    }
-}
-
-@media (min-width: 992px) {
-    #accordian li.active > ul.mega-menu {
-        min-width: 770px;
-    }
-}
-
-@media (min-width: 1000px) {
-    #accordian li.active > ul.mega-menu {
-        min-width: 750px;
-    }
-}
-
-@media (min-width: 1200px) {
-    #accordian li.active > ul.mega-menu {
-        min-width: 900px;
-    }
-}
-
-@media (min-width: 1400px) {
-    #accordian li.active > ul.mega-menu {
-        min-width: 1140px;
-    }
-}
-
-@media(max-width: 1550px) and (min-width:768px) {
-    #accordian li.active > ul.mega-menu {
-        min-width: 750px;
-        height: 475px;
-        overflow: auto;
-    }
-}
-
-.section-video {
-    margin-bottom: 50px;
-}
-
-    .section-video video {
-        width: 100%;
-        height: 500px;
-        object-fit: cover;
+        padding: 15px;
+        overflow: hidden;
     }
 
-    .section-video .desc {
-        font-size: 1.5em;
+    .article-list {
+        margin-bottom: 15px;
     }
 
-.article-header {
-    text-align: center;
-    height: 150px;
-}
+        .article-list > li {
+            font-size: 1.4em;
+            text-align: justify;
+            line-height: 1.8em;
+        }
 
-    .article-header > h1 {
-        line-height: 150px;
+    @media (min-width: 576px) {
+        #accordian li.active > ul.mega-menu {
+            min-width: 540px;
+        }
     }
 
-details {
-    font-size: 1.5em;
-}
+    @media (min-width: 992px) {
+        #accordian li.active > ul.mega-menu {
+            min-width: 770px;
+        }
+    }
 
-.des-article h2, .des-article h3 {
-    text-align: right !important;
-    margin-top: 50px;
-    font-size: 24px;
-    margin-bottom: 50px !important;
-}
+    @media (min-width: 1000px) {
+        #accordian li.active > ul.mega-menu {
+            min-width: 750px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        #accordian li.active > ul.mega-menu {
+            min-width: 900px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        #accordian li.active > ul.mega-menu {
+            min-width: 1140px;
+        }
+    }
+
+    @media(max-width: 1550px) and (min-width:768px) {
+        #accordian li.active > ul.mega-menu {
+            min-width: 750px;
+            height: 475px;
+            overflow: auto;
+        }
+
+
+        .section-video {
+            margin-bottom: 50px;
+        }
+
+            .section-video video {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+
+            .section-video .desc {
+                font-size: 1.5em;
+            }
+
+        .article-header {
+            text-align: center;
+        }
+
+            .article-header > h1 {
+                line-height: 150px;
+            }
+
+        details {
+            font-size: 1.5em;
+        }
+
+        .des-article h2, .des-article h3 {
+            text-align: right !important;
+            margin-top: 30px;
+            font-size: 24px;
+            margin: 30px 0;
+        }
+    }

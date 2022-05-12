@@ -1,8 +1,9 @@
-﻿
-@{ ViewBag.Title = "مرکز تخصصی تعمیر لوازم خانگی در تهران";
+﻿@{
+    ViewBag.Title = "مرکز تخصصی تعمیر لوازم خانگی در تهران";
     ViewBag.Des = "تعمیر لوازم خانگی،تعمیر لوازم خانگی در تهران،تعمیرات لوازم خانگی،آموزش تعمیرات لوازم خانگی،تعمیرلوازم خانگی،دینا سرویس";
     ViewBag.Key = "،تعمیر لازم خانگی در شرق تهران،تعمیر لوازم خانگی در شمال تهران،تعمیر لوازم خانگی در غرب تهران،دینا سرویس،تعمیر لوازم خانگی،تعمیر لوازم خانگی در تهران،تعمیر لوازم خانگی در محل،تعمیر لوازم خانگی ازران";
-    Layout = "~/Views/Shared/_Layout.cshtml"; }
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
 
 
@@ -14,14 +15,14 @@
 @*@Html.Action("GetStudy", "Home", null)*@
 
 @*<section class="section-video">
-        <div class="container">
-            <div>
-                <video controls="controls">
-                    <source src="~/Content/Video/SampleVideo_720x480_5mb.mp4" type="video/mp4" />
-                </video>
+    <div class="container">
+    <div>
+    <video controls="controls">
+    <source src="~/Content/Video/SampleVideo_720x480_5mb.mp4" type="video/mp4" />
+    </video>
 
-            </div>
-        </div>
+    </div>
+    </div>
     </section>*@
 
 @await Component.InvokeAsync("InformationComponent")
@@ -30,4 +31,3 @@
 
 
 @await Component.InvokeAsync("CompanyInfoComponent")
-

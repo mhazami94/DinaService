@@ -8,11 +8,12 @@
 <div class="product-page article-page">
     <article class="des-article">
 
-        <div class="article-header" style="@(Model.ImageId!=null?$"background: url('/filehanlder/{Model.ImageId}')":"width:height:150px")">
-            <h1>
-                @Model.Title
-            </h1>
-        </div>
+        @*<div class="article-header" style="@(Model.ImageId!=null?$"background: url('/filehanlder/{Model.ImageId}')":"width:height:150px")">*@
+        <div class="article-header">
+        <h1>
+            @Model.Title
+        </h1>
+</div>
 
         <div class="des-post row">
 

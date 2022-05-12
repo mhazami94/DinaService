@@ -285,3 +285,7 @@ D:\Workspace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Article\Crea
 D:\Workspace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Article\Edit.cshtml.g.cs
 D:\Workspace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Article\Details.cshtml.g.cs
 D:\Workspace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Article\Delete.cshtml.g.cs
+D:\Workspace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\ConsultantServices.cshtml.g.cs
+D:\Workspace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\DishWasher.cshtml.g.cs
+D:\Workspace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\fridge.cshtml.g.cs
+D:\Workspace\DinaService\Webapp\obj\Debug\netcoreapp3.1\Razor\Views\Home\WashingMachine.cshtml.g.cs

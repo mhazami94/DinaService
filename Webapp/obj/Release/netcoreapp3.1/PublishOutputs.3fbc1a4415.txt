@@ -1,4 +1,7 @@
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\Webapp.exe
+D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\16x16.png
+D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\32x32.png
+D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\96x96.png
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\accessdenied.png
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App_theme\DinaTheme\css\adminpanel.css
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App_theme\DinaTheme\css\adminpanel.min.css
@@ -20,6 +23,8 @@ D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App_theme\DinaTheme\css\owl.carousel.min.css
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App_theme\DinaTheme\css\owl.theme.default.min.css
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App_theme\DinaTheme\css\r-slider.css
+D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App_theme\DinaTheme\css\saba.css
+D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App_theme\DinaTheme\css\saba.min.css
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App_theme\DinaTheme\css\style.css
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App_theme\DinaTheme\css\style.min.css
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\App_theme\DinaTheme\css\Wash\wash-style.css
@@ -236,6 +241,7 @@ D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Con
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Content\Images\washing-machine.png
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Content\Images\washing-machine.svg
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Content\Images\washing.jpg
+D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Content\Images\washing.png
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Content\Images\whatsapp-white.png
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Content\Images\whatsapp.png
 D:\Workspace\DinaService\Webapp\obj\Release\netcoreapp3.1\PubTmp\Out\wwwroot\Content\Images\Whirlpool.png

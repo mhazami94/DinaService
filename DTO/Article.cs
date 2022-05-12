@@ -21,14 +21,14 @@ namespace DTO
             set { SetPropertyValue("Id", value); }
         }
 
-        private Guid? _imageId;
-        [IsNullable]
-        [DbType("uniqueidentifier")]
-        public Guid? ImageId
-        {
-            get { return _imageId; }
-            set { SetPropertyValue("ImageId", value); }
-        }
+        //private Guid? _imageId;
+        //[IsNullable]
+        //[DbType("uniqueidentifier")]
+        //public Guid? ImageId
+        //{
+        //    get { return _imageId; }
+        //    set { SetPropertyValue("ImageId", value); }
+        //}
      
 
         private string _title;

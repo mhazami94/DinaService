@@ -63,21 +63,21 @@ namespace BLL.Facade
                 if (getUrl != null)
                     throw new Exception("There is an article with this Url");
 
-                await Task.Run(() =>
-                {
-                    if (fileId != null)
-                    {
-                        var file = new Files()
-                        {
-                        };
-                        var imageId = fileBO.Insert(base.ConnectionHandler, fileId, file);
-                        if (imageId == Guid.Empty)
-                        {
-                            throw new Exception("Error In Registration");
-                        }
-                        blog.ImageId = imageId;
-                    }
-                });
+                //await Task.Run(() =>
+                //{
+                //    if (fileId != null)
+                //    {
+                //        var file = new Files()
+                //        {
+                //        };
+                //        var imageId = fileBO.Insert(base.ConnectionHandler, fileId, file);
+                //        if (imageId == Guid.Empty)
+                //        {
+                //            throw new Exception("Error In Registration");
+                //        }
+                //        blog.ImageId = imageId;
+                //    }
+                //});
 
 
                 blog.RegisterDate = DateTime.Now;
@@ -160,21 +160,21 @@ namespace BLL.Facade
 
             try
             {
-                await Task.Run(() =>
-                {
-                    if (fileId != null)
-                    {
-                        var file = new Files();
-                        if (oldObj.ImageId != null && oldObj.ImageId != Guid.Empty)
-                            if (!fileBO.Delete(base.ConnectionHandler, oldObj.ImageId))
-                                throw new Exception("Error in Reistration");
-                        var imageId = fileBO.Insert(base.ConnectionHandler, fileId, file);
-                        if (imageId == Guid.Empty)
-                            throw new Exception("Error in Reistration");
+                //await Task.Run(() =>
+                //{
+                //    if (fileId != null)
+                //    {
+                //        var file = new Files();
+                //        if (oldObj.ImageId != null && oldObj.ImageId != Guid.Empty)
+                //            if (!fileBO.Delete(base.ConnectionHandler, oldObj.ImageId))
+                //                throw new Exception("Error in Reistration");
+                //        var imageId = fileBO.Insert(base.ConnectionHandler, fileId, file);
+                //        if (imageId == Guid.Empty)
+                //            throw new Exception("Error in Reistration");
 
-                        oldObj.ImageId = imageId;
-                    }
-                });
+                //        oldObj.ImageId = imageId;
+                //    }
+                //});
 
                 oldObj.Title = blog.Title;
                 oldObj.Abstract = blog.Abstract.FixTextEditorOutput();

@@ -35,11 +35,13 @@ namespace DinaService.Controllers
             return PartialView("PVMenu", list);
         }
 
+        [HttpGet("/تماس-باما")]
         public IActionResult ContactUs(int? id, string slug)
         {
             return View();
         }
 
+        [HttpGet("/درباره-ما")]
         public IActionResult AboutUs(int? id, string slug)
         {
             return View();
@@ -77,6 +79,30 @@ namespace DinaService.Controllers
                 ViewBag.Status = "red";
                 return View(request);
             }
+        }
+
+        [HttpGet("/خدمات-مشاوره")]
+        public IActionResult ConsultantServices()
+        {
+            return View();
+        }
+
+        [HttpGet("/تعمیر-لباسشویی")]
+        public IActionResult WashingMachine()
+        {
+            return View();
+        }
+
+        [HttpGet("/تعمیر-ظرفشویی")]
+        public IActionResult DishWasher()
+        {
+            return View();
+        }
+
+        [HttpGet("/تعمیر-یخچال")]
+        public IActionResult fridge()
+        {
+            return View();
         }
     }
 }
